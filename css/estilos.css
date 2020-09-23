@@ -1,0 +1,31 @@
+body{
+  font-family: sans-serif;
+  background-color: #E5E5E5;
+  margin: 0;
+}
+/* INICIO DEL HEADER */
+.header-box{
+  background-color:#C12017;
+}
+
+/* CONTENEDOR */
+.container{
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+}
+
+/* INICIO DEL MENU */
+.menu-box{
+  background-color: #222D31;
+  text-align: left;
+  display: grid;
+  height: 100%;
+  width: 200px;
+}
+.menu-box a {
+  text-transform: uppercase;
+  color: white;
+  text-decoration: none;
+}
