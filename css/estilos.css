@@ -1,4 +1,5 @@
 
+/* https://icon-icons.com/es/icono/herramientas/66544 --> descarga de iconos */
 body{
   font-family: sans-serif;
   border: 0;
@@ -19,6 +20,7 @@ body{
   background-color: #333;
   color: white;
   transition: all 0.3s;
+  /* border: 1px solid black; */
 }
 .sidebar .sidebar-title{
   box-sizing: border-box;
@@ -64,12 +66,13 @@ body{
   overflow: hidden;
 }
 .sidebar-logoContainer{
-  width: 50%;
-  margin: 20px auto;
+  width: 90%;
+  margin: 10px auto;
   overflow: hidden;
-  border: 1px solid #444;
+  /* border: 1px solid #444; */
 }
 .sidebar-logo{
+  /* background-color: #B22C1B; */
   max-width: 100%;
   justify-content: center;
   margin: 0 auto;
@@ -86,6 +89,7 @@ body{
 }
 .list-opt li{
   width: 250px;
+  box-sizing: border-box;
 }
 .list-opt a,
 .list-opt img{
@@ -123,7 +127,7 @@ body{
   display: flex;
   width: 100%;
   margin-right: -5px;
-  padding: 10px;
+  /* padding: 10px; */
   justify-content: space-between;
 }
 .menu-expanded .sidebar-title span{
@@ -152,18 +156,37 @@ body{
 .menu-collapsed li{
   width: 50px;
 }
-/*
 
-/* 
+.sidebar-user li{
+  display: flex;
+  align-items: center;
+  border-top: 1px solid #444;
+  border-bottom: 1px solid #444;
+  bottom: 0;
+}
+.sidebar-user img{
+  box-sizing: border-box;
+  padding: 10px;
+  width: 50px;
+}
+
+.menu-collapsed .sidebar-user a{
+  width: 0;
+  height: 0;
+  padding: 0;
+  margin: 0;
+}
+.sidebar-user:hover{
+  background-color: #444;
+}
+
+/* CONTENEDOR PRINCIPAL */
 .main-container{
-  display: flex;
-  transform: translateX(250px);
+  /* position: relative; */
+  height: 100%;
+  top: 0;
+  margin: 7px;
+  padding: 20px;
+  /* border: 1px solid black; */
+  background-color: white;
 }
-.container-expanded{
-  margin-left: 250px;
-  display: flex;
-}
-.container-collapsed{
-  margin-left: 50px;
-  display: flex;
-} */
