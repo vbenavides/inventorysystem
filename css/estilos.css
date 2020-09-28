@@ -4,16 +4,20 @@ body{
   border: 0;
   margin: 0;
   background-color: #E5E5E5;
-  /* margin-left: 250px; */
+  margin-left: 250px;
+  transition: all 0.3s;
 }
-
+.body-expanded{
+  margin-left: 50px;
+}
 .sidebar {
   position: fixed;
+  left: 0;
+  top: 0;
   width: 250px;
   height: 100%;
   background-color: #333;
   color: white;
-  /* outline: 1px solid #2a2a2a; */
   transition: all 0.3s;
 }
 .sidebar .sidebar-title{
@@ -23,6 +27,7 @@ body{
   align-items: center;
   font-size: 16px;
   justify-content: space-between;
+  overflow: hidden;
 }
 .sidebar .sidebar-title h2{
   box-sizing: border-box;
@@ -36,8 +41,8 @@ body{
   /* background-color: #2a2a2a; */
 }
 .sidebar .list-opt{
-  border: 1px solid #444;
-  border-bottom: solid 1px #444;
+  /* border: 1px solid #444; */
+  /* border-bottom: solid 1px #444; */
   list-style: none;
   padding: 0;
   margin: 0;
@@ -72,8 +77,12 @@ body{
 .sidebar-title, .sidebar-btn{
   vertical-align: middle;
 }
+.sidebar-btn{
+  display: inline-block;
+}
 .list-opt{
   overflow: hidden;
+  display: inline-block;
 }
 .list-opt li{
   width: 250px;
@@ -106,45 +115,46 @@ body{
   margin: 5px 0;
 }
 
-
 .menu-expanded{
   width: 250px;
   box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 .menu-expanded .sidebar-title {
-  display: inline;
-  width: calc(100% - 50px);
+  display: flex;
+  width: 100%;
   margin-right: -5px;
   padding: 10px;
-
+  justify-content: space-between;
+}
+.menu-expanded .sidebar-title span{
+  width: calc(300px - 50px - 5px);
+  overflow: hidden;
+  display: inline-block;
 }
 .menu-expanded .sidebar-logoContainer{
-  width: 70%;
+  width: 50%;
 }
-.menu-expanded .sidebar-title{
+/* .menu-expanded .sidebar-title{
   width: 100%;
-}
+} */
 .menu-collapsed{
   width: 50px ;
 }
-.menu-collapsed .sidebar-title{
+.menu-collapsed .sidebar-title h2{
   width: 0;
   height: 0;
   padding: 0;
   margin: 0;
 }
-.menu-collapsed .sidebar-title h2{
-  width: calc(250px - 50px -5px);
-  overflow: hidden;
-  display: none;
-}
 .menu-collapsed .list-opt a{
   display: none;
 }
 .menu-collapsed li{
-  width: 100px;
+  width: 50px;
 }
+/*
 
+/* 
 .main-container{
   display: flex;
   transform: translateX(250px);
@@ -156,4 +166,4 @@ body{
 .container-collapsed{
   margin-left: 50px;
   display: flex;
-}
+} */

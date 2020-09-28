@@ -8,6 +8,9 @@
 </head>
 <body>
   <div class="sidebar menu-expanded">
+    <figure class="sidebar-logoContainer">
+      <img class="sidebar-logo" src="images/logo.png" alt="">
+    </figure>
     <div class="sidebar-title">
       <h2><span>Inventory</span></h2>
       <div class="sidebar-btn">
@@ -16,9 +19,6 @@
         <div class="btn-burger"></div>
       </div>
     </div>
-    <figure class="sidebar-logoContainer">
-      <img class="sidebar-logo" src="images/logo.png" alt="">
-    </figure>
     <ul class="list-opt">
       <li><img src="images/computer.png" alt=""><a href="#">Desktop</a></li>
       <li><a href="#">Laptop</a></li>
@@ -41,13 +41,13 @@
   <script>
     const btn = document.querySelector('.sidebar-btn');
     const menu = document.querySelector('.sidebar');
-    const contexto = document.querySelector('.menu-container');
+    // const contexto = document.querySelector('.menu-container');
     btn.addEventListener('click', e =>{
       menu.classList.toggle("menu-expanded");
       menu.classList.toggle("menu-collapsed");
-      // contexto.classList.toggle("container-collapsed");
-      contexto.classList.toggle("container-collapsed");
-      // document.querySelector('body').classList.toggle('body-expanded');
+    //   // contexto.classList.toggle("container-collapsed");
+    //   contexto.classList.toggle("container-collapsed");
+      document.querySelector('body').classList.toggle('body-expanded');
     });
   </script>
 </body>
